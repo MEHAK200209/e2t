@@ -9,9 +9,15 @@ import numpy as np
 from datetime import datetime
 
 # Utils
-import joblib 
-pipe_lr = joblib.load(open("C:\\Users\\T S P\\Downloads\\e2t-main\\e2t-main\\project\\emotion_classifier_pipe_lr_03_june_2021.pkl"
-))
+import joblib
+
+# Specify the file path of the .pkl file
+file_path = "C:\\Users\\T S P\\Downloads\\e2t-main\\e2t-main\\project\\emotion_classifier_pipe_lr_03_june_2021.pkl"
+
+# Load the model using joblib.load() with the file path and specifying the encoding
+with open(file_path, 'rb') as file:
+    pipe_lr = joblib.load(file, encoding='latin1')
+
 
 
 # Track Utils
