@@ -16,7 +16,7 @@ file_path = "C:\\Users\\T S P\\Downloads\\e2t-main\\e2t-main\\project\\emotion_c
 
 # Load the model using joblib.load() with the file path and specifying the encoding
 with open(file_path, 'rb') as file:
-    pipe_lr = joblib.load(file, encoding='latin1')
+    pipe_lr = joblib.load(file, encoding="utf-8")
 
 
 
